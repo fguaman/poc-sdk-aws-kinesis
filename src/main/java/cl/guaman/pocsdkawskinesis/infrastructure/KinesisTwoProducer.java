@@ -27,6 +27,11 @@ public class KinesisTwoProducer extends KinesisTwo implements Message.Commands {
         this.messageJSON = new JSON<>(Message.class);
     }
 
+    /**
+     * Implementation Kinesis to send message sync two
+     *
+     * @param message
+     */
     @Override
     public void send(Message message) {
         try {
@@ -38,6 +43,11 @@ public class KinesisTwoProducer extends KinesisTwo implements Message.Commands {
         }
     }
 
+    /**
+     * Implementation Kinesis to send message async two
+     *
+     * @param message
+     */
     @Override
     public void sendAsync(Message message) {
         try {

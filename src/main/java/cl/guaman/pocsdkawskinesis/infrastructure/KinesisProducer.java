@@ -30,7 +30,7 @@ public class KinesisProducer extends Kinesis implements Message.Commands {
     }
 
     /**
-     * Implementation Kinesis to send message
+     * Implementation Kinesis to send message sync
      *
      * @param message
      */
@@ -44,7 +44,11 @@ public class KinesisProducer extends Kinesis implements Message.Commands {
             log.error("error in kinesis sending sync message={}, error={}", message, e.getMessage());
         }
     }
-
+    /**
+     * Implementation Kinesis to send message async
+     *
+     * @param message
+     */
     @Override
     public void sendAsync(Message message) {
         try {

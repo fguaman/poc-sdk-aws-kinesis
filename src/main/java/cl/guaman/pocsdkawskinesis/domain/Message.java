@@ -24,7 +24,7 @@ public class Message {
     public interface Commands {
 
         /**
-         * Method to send message
+         * Method to send message sync
          *
          * @param message
          */
