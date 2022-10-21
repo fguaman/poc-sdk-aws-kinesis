@@ -1,0 +1,10 @@
+aws:
+  region: 'us-east-1'
+  accessKeyId: '---'
+  secretAccessKey: '---'
+  accessKeyIdTwo: '---'
+  secretAccessKeyTwo: '---'
+  rolArn: '---'
+  kinesis:
+    streamName: 'test-sdk'
+    shard: 1
